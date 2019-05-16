@@ -8,7 +8,7 @@ export const config: Config = {
   ],
   bundles: [
     { components: ['date-picker'] },
-    { components: ['calendar-back', 'calendar-month'] }
+    { components: ['calendar-month'] }
   ],
   outputTargets: [
     {

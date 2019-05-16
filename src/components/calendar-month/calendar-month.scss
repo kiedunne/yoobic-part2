@@ -1,13 +1,7 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 10px;
-}
 
 h1, div, p {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -16,7 +10,55 @@ button {
     justify-content: center;
     background-color: pink;
     border-radius: 7vw;
-    margin: 2vw;
-    width: 12vw;
+    width: 10vw;
+    padding: 0.5vw;
     border-color: transparent;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 17vw;
+  margin-right: 17vw;
+  margin-top: 5vw;
+}
+.selectedDate {
+  width: 30vw;
+  height: 2vw;
+  border-style: solid;
+  border-color: pink;
+  border-radius: 1vw;
+  border-width: 2px;
+}
+.carousel {
+  transition: all 1s ease;
+}
+.day-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1.5em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  justify-items: center;
+}
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1.5em;
+  justify-items: center;
+}
+.wrapper {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.card {
+ padding: 5px;
+}
+.card:hover {
+  background-color: pink;
+  color: white;
+  padding: 5px;
 }
