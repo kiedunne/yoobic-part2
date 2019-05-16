@@ -1,4 +1,14 @@
-date-picker {
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+h1, div, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: rgb(61, 60, 60);
@@ -7,6 +17,6 @@ date-picker {
     background-color: pink;
     border-radius: 7vw;
     margin: 2vw;
-    width: 50vw;
-    
+    width: 12vw;
+    border-color: transparent;
 }

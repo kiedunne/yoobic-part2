@@ -29,6 +29,12 @@ export namespace Components {
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
+  interface CalendarBack {}
+  interface CalendarBackAttributes extends StencilHTMLAttributes {}
+
+  interface CalendarMonth {}
+  interface CalendarMonthAttributes extends StencilHTMLAttributes {}
+
   interface DatePicker {}
   interface DatePickerAttributes extends StencilHTMLAttributes {}
 }
@@ -38,6 +44,8 @@ declare global {
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
+    'CalendarBack': Components.CalendarBack;
+    'CalendarMonth': Components.CalendarMonth;
     'DatePicker': Components.DatePicker;
   }
 
@@ -45,6 +53,8 @@ declare global {
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
+    'calendar-back': Components.CalendarBackAttributes;
+    'calendar-month': Components.CalendarMonthAttributes;
     'date-picker': Components.DatePickerAttributes;
   }
 
@@ -67,6 +77,18 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLCalendarBackElement extends Components.CalendarBack, HTMLStencilElement {}
+  var HTMLCalendarBackElement: {
+    prototype: HTMLCalendarBackElement;
+    new (): HTMLCalendarBackElement;
+  };
+
+  interface HTMLCalendarMonthElement extends Components.CalendarMonth, HTMLStencilElement {}
+  var HTMLCalendarMonthElement: {
+    prototype: HTMLCalendarMonthElement;
+    new (): HTMLCalendarMonthElement;
+  };
+
   interface HTMLDatePickerElement extends Components.DatePicker, HTMLStencilElement {}
   var HTMLDatePickerElement: {
     prototype: HTMLDatePickerElement;
@@ -77,6 +99,8 @@ declare global {
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
+    'calendar-back': HTMLCalendarBackElement
+    'calendar-month': HTMLCalendarMonthElement
     'date-picker': HTMLDatePickerElement
   }
 
@@ -84,6 +108,8 @@ declare global {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'calendar-back': HTMLCalendarBackElement;
+    'calendar-month': HTMLCalendarMonthElement;
     'date-picker': HTMLDatePickerElement;
   }
 

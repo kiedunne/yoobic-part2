@@ -7,7 +7,8 @@ export const config: Config = {
     sass()
   ],
   bundles: [
-    { components: ['date-picker'] }
+    { components: ['date-picker'] },
+    { components: ['calendar-back', 'calendar-month'] }
   ],
   outputTargets: [
     {
